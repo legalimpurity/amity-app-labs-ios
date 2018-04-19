@@ -14,6 +14,7 @@
 		1421382E207B647B00A842DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1421382C207B647B00A842DF /* LaunchScreen.storyboard */; };
 		14213839207B647B00A842DF /* AmityIncubatorTableViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14213838207B647B00A842DF /* AmityIncubatorTableViewAppTests.swift */; };
 		14213844207B647B00A842DF /* AmityIncubatorTableViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14213843207B647B00A842DF /* AmityIncubatorTableViewAppUITests.swift */; };
+		14213854207B662600A842DF /* AppLabStudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14213853207B662600A842DF /* AppLabStudentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1421383F207B647B00A842DF /* AmityIncubatorTableViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmityIncubatorTableViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14213843207B647B00A842DF /* AmityIncubatorTableViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmityIncubatorTableViewAppUITests.swift; sourceTree = "<group>"; };
 		14213845207B647B00A842DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14213853207B662600A842DF /* AppLabStudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabStudentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1421382A207B647B00A842DF /* Assets.xcassets */,
 				1421382C207B647B00A842DF /* LaunchScreen.storyboard */,
 				1421382F207B647B00A842DF /* Info.plist */,
+				14213853207B662600A842DF /* AppLabStudentCell.swift */,
 			);
 			path = AmityIncubatorTableViewApp;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14213826207B647A00A842DF /* ViewController.swift in Sources */,
+				14213854207B662600A842DF /* AppLabStudentCell.swift in Sources */,
 				14213824207B647A00A842DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
