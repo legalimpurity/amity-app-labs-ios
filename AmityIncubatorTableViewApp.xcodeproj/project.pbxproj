@@ -15,6 +15,7 @@
 		14213839207B647B00A842DF /* AmityIncubatorTableViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14213838207B647B00A842DF /* AmityIncubatorTableViewAppTests.swift */; };
 		14213844207B647B00A842DF /* AmityIncubatorTableViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14213843207B647B00A842DF /* AmityIncubatorTableViewAppUITests.swift */; };
 		14213854207B662600A842DF /* AppLabStudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14213853207B662600A842DF /* AppLabStudentCell.swift */; };
+		97CE6CFE1470F8FA05637859 /* Pods_AmityIncubatorTableViewApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754827DC93E7EFCF19ED2943 /* Pods_AmityIncubatorTableViewApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		14213843207B647B00A842DF /* AmityIncubatorTableViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmityIncubatorTableViewAppUITests.swift; sourceTree = "<group>"; };
 		14213845207B647B00A842DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14213853207B662600A842DF /* AppLabStudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabStudentCell.swift; sourceTree = "<group>"; };
+		31CD4C25D011736743C97A32 /* Pods-AmityIncubatorTableViewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmityIncubatorTableViewApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmityIncubatorTableViewApp/Pods-AmityIncubatorTableViewApp.release.xcconfig"; sourceTree = "<group>"; };
+		72317F1CC7831A6496B37C2C /* Pods-AmityIncubatorTableViewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmityIncubatorTableViewApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmityIncubatorTableViewApp/Pods-AmityIncubatorTableViewApp.debug.xcconfig"; sourceTree = "<group>"; };
+		754827DC93E7EFCF19ED2943 /* Pods_AmityIncubatorTableViewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmityIncubatorTableViewApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97CE6CFE1470F8FA05637859 /* Pods_AmityIncubatorTableViewApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				14213837207B647B00A842DF /* AmityIncubatorTableViewAppTests */,
 				14213842207B647B00A842DF /* AmityIncubatorTableViewAppUITests */,
 				14213821207B647A00A842DF /* Products */,
+				3F708BC82193F27E043A4500 /* Pods */,
+				B5E14371F5CB838987EBA375 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,23 @@
 			path = AmityIncubatorTableViewAppUITests;
 			sourceTree = "<group>";
 		};
+		3F708BC82193F27E043A4500 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72317F1CC7831A6496B37C2C /* Pods-AmityIncubatorTableViewApp.debug.xcconfig */,
+				31CD4C25D011736743C97A32 /* Pods-AmityIncubatorTableViewApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5E14371F5CB838987EBA375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				754827DC93E7EFCF19ED2943 /* Pods_AmityIncubatorTableViewApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14213848207B647B00A842DF /* Build configuration list for PBXNativeTarget "AmityIncubatorTableViewApp" */;
 			buildPhases = (
+				FE4DB27C4F2D47268432196A /* [CP] Check Pods Manifest.lock */,
 				1421381C207B647A00A842DF /* Sources */,
 				1421381D207B647A00A842DF /* Frameworks */,
 				1421381E207B647A00A842DF /* Resources */,
+				DD6AC2221D4A2467C406484B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +279,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD6AC2221D4A2467C406484B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AmityIncubatorTableViewApp/Pods-AmityIncubatorTableViewApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmityIncubatorTableViewApp/Pods-AmityIncubatorTableViewApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE4DB27C4F2D47268432196A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmityIncubatorTableViewApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1421381C207B647A00A842DF /* Sources */ = {
@@ -432,14 +497,12 @@
 		};
 		14213849207B647B00A842DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72317F1CC7831A6496B37C2C /* Pods-AmityIncubatorTableViewApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AmityIncubatorTableViewApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.amity.AmityIncubatorTableViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -449,14 +512,12 @@
 		};
 		1421384A207B647B00A842DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31CD4C25D011736743C97A32 /* Pods-AmityIncubatorTableViewApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AmityIncubatorTableViewApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.amity.AmityIncubatorTableViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -471,11 +532,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AmityIncubatorTableViewAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.amity.AmityIncubatorTableViewAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,11 +548,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AmityIncubatorTableViewAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.amity.AmityIncubatorTableViewAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -510,11 +563,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AmityIncubatorTableViewAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.amity.AmityIncubatorTableViewAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -529,11 +578,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AmityIncubatorTableViewAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.amity.AmityIncubatorTableViewAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
